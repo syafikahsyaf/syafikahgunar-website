@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-image: url("pic/background.jpg"); 
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat; 
+            font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: darkblue;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section-container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon-text {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+
+        .icon-text i {
+            font-size: 24px;
+            color: darkblue;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: lightpink;
+        }
+
+        td {
+            background-color: lightcyan;
+        }
+
+        /* Gaya gambar untuk konsistensi */
+        table img {
+            width: 150px; /* Tetapkan lebar seragam */
+            height: auto; /* Kekalkan nisbah aspek */
+            object-fit: contain; /* Pastikan imej kelihatan sepenuhnya */
+            border-radius: 5px; /* Sudut bulat */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayang */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="biodata.html">My Biodata</a> | 
+            <a href="portfolio.html">My Portfolio</a> | 
+            <a href="video.html">My Video</a> | 
+            <a href="comments.html">Your Comments</a>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="section-container">
+        <h2>About Me</h2>
+        <div class="icon-text">
+            <i class="fas fa-graduation-cap"></i>
+            <p><strong>Goals: I aspire to graduate with a bachelor's degree with flying colors and make my family proud.</strong></p>
+        </div>
+		
+		<div class="icon-text">
+            <i class="fas fa-heart"></i>
+            <p><strong>My Interests: I love exploring web development, augmented reality, and creating engaging multimedia projects. I am especially captivated by the storytelling power of animation, where the harmony of visuals and sound design brings emotionally compelling narratives to life. Hence, my favourite subject in university is animation.</strong></p>
+        </div>
+        <div class="icon-text">
+            <i class="fas fa-lightbulb"></i>
+            <p><strong>Motto: Never say you can't until you've tried.</strong></p>
+        </div>
+        <div class="icon-text">
+            <i class="fas fa-envelope"></i>
+            <p>
+                <strong>Email:</strong> 
+                <a href="mailto:nurul_syafikah_bi22@iluv.ums.edu.my">nurul_syafikah_bi22@iluv.ums.edu.my</a>
+            </p>
+        </div>
+        <div class="icon-text">
+            <i class="fab fa-instagram"></i>
+            <p>
+                <strong>Instagram:</strong> 
+                <a href="https://www.instagram.com/syxfkh_nrl" target="_blank">@syxfkh_nrl</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-container">
+        <h2>Skills</h2>
+        <div class="icon-text">
+            <i class="fas fa-paint-brush"></i>
+            <p><strong>Skilled in Photoshop and Blender.</strong></p>
+        </div>
+        <div class="icon-text">
+            <i class="fas fa-code"></i>
+            <p><strong>Experienced in C++, Java, JavaScript, SQL, and HTML.</strong></p>
+        </div>
+        <div class="icon-text">
+            <i class="fas fa-comments"></i>
+            <p><strong>Effectively communicated in group projects.</strong></p>
+        </div>
+        <div class="icon-text">
+            <i class="fas fa-language"></i>
+            <p><strong>Fluent in Bahasa Melayu, English, and Mandarin.</strong></p>
+        </div>
+        <div class="icon-text">
+            <i class="fas fa-users"></i>
+            <p><strong>Led a team of 5 in an innovation competition.</strong></p>
+        </div>
+    </section>
+
+   
+    <!-- My Projects Section -->
+<section class="section-container">
+    <h2>My Projects</h2>
+    <table>
+        <tr>
+            <th>Project Name</th>
+            <th>Details</th>
+            <th>Achievement</th>
+            <th>Certificate</th>
+            <th>Image</th>
+        </tr>
+        <tr>
+            <td>Claymation</td>
+            <td>Technorama Fiesta (2018) - learned claymation production.</td>
+            <td>None</td>
+            <td><img src="pic/claymation_technorama.jpg" alt="Claymation Certificate" class="modal-img"></td>
+            <td><img src="pic/claymation proj.jpg" alt="Claymation Project" class="modal-img"></td>
+        </tr>
+        <tr>
+            <td>Sistem Penempahan Bilik APD (SisAPD)</td>
+            <td>Three members of Bridgate Bestari (SMK Sepagaya) and I participated in an innovation competition, presenting a system designed for booking rooms at the SMK Sepagaya Resource Center for educational purposes.</td>
+            <td>Silver Award (2019)</td>
+            <td><img src="pic/silver_ipenda.jpg" alt="Silver Award Certificate" class="modal-img"></td>
+            <td><img src="pic/pertandingan iPendDa.jpg" alt="SisAPD Project Image" class="modal-img"></td>
+        </tr>
+        <tr>
+            <td>Group Project Animation Sem 3</td>
+            <td>Created an animated advertisement video for Peel Fresh drink as part of group project.</td>
+            <td>-</td>
+            <td>-</td>
+            <td><img src="pic/animation_gpproj.jpg" alt="Group Animation Project" class="modal-img"></td>
+        </tr>
+    </table>
+</section>
+
+<!-- Modal Popup -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+    // JavaScript untuk fungsi modal
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("modalImage");
+    const closeModal = document.querySelector(".close");
+
+    // Dapatkan semua gambar dengan class 'modal-img'
+    const images = document.querySelectorAll(".modal-img");
+
+    images.forEach(img => {
+        img.onclick = function () {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+        }
+    });
+
+    // Tutup modal
+    closeModal.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<style>
+    /* Gaya Modal */
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal img {
+        max-width: 90%;
+        max-height: 80%;
+        border: 5px solid #fff;
+        border-radius: 10px;
+    }
+
+    .modal .close {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .modal .close:hover {
+        color: red;
+    }
+
+    /* Hover Effect pada Gambar */
+    table img {
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    table img:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+
+    <!-- My Education Section -->
+    <section class="section-container">
+        <h2>My Education</h2>
+        <table>
+            <tr>
+                <th>Level</th>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Elementary School</td>
+                <td>SK Unico Desa</td>
+                <td>UPSR (2014)</td>
+            </tr>
+            <tr>
+                <td>High School</td>
+                <td>SMK Sepagaya</td>
+                <td>SPM (2019), STPM (2022)</td>
+            </tr>
+            <tr>
+                <td>College</td>
+                <td>UMS Labuan International Campus</td>
+                <td>Currently Pursuing Bachelor of Information Technology with Honours (Multimedia Technology)</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
